@@ -1,0 +1,7 @@
+Root
+============
+README.md
+.gitignore
+client/
+server/
+
