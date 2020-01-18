@@ -1,0 +1,1 @@
+Q. Why we didn't use babel polyfill in server directory?
