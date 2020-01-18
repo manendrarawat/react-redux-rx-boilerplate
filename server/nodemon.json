@@ -1,3 +1,7 @@
 {
-    "exec" : "npm run watch"
+    "signal": "SIGTERM",
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "exec": "npm run watch"
 }
