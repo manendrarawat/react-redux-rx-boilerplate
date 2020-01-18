@@ -5,3 +5,12 @@ README.md
 client/
 server/
 
+	server/
+	==============
+	.gitignore
+	.babelrc
+	package.json
+	nodemon.json
+	ecosystem.config.js
+	src/
+
