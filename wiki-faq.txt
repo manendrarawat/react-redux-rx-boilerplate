@@ -1,0 +1,3 @@
+Q. Why we didn't use babel polyfill in server directory?
+Q. forceAllTransforms is not clear in .babelrc file. 
+   (after enable it to true. babel translator start)

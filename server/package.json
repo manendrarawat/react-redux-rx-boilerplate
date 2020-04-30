@@ -1,0 +1,35 @@
+{
+  "name": "react-redux-rx-boilerplate",
+  "version": "1.0.0",
+  "description": "User CRED App",
+  "main": "src/index.js",
+  "scripts": {
+    "preclean": "npm install",
+    "clean": "rm -rf ../dist",
+    "postclean": "mkdir ../dist && cp -R node_modules ../dist && cp package.json ../dist && cp ecosystem.config.js ../dist",
+    "build:dev": "babel src --out-dir ../dist",
+    "serve:dev": "node ../dist/index.js",
+    "watch": "npm run build:dev && npm run serve:dev",
+    "start": "npm run clean && nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:manendrarawat/react-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "Manendra Rawat <mannuatnri.itm@gmail.com>",
+  "homepage": "https://github.com/manendrarawat/react-redux-rx-boilerplate",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
