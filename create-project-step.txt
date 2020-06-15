@@ -24,3 +24,26 @@ npm run start => do clean operation and start nodemon
 clean operation => 1. preclean => npm install
 				   2. clean => rm -rf ../dist
 				   3. postclean => mkdir ../dist && cp -R node_modules ../dist && cp package.json ../dist && cp ecosystem.config.js ../dist
+
+
+
+===================
+Directory Structure
+===================
+src / dashboard / {entity} / {feature} / {page}
+
+Entities
+--------------
+Employee, Customer etc.
+
+Features
+---------------
+Create, Edit, Update and Delete Employee etc.
+
+Pages
+---------------
+List Employees, 
+Create Employee,
+Update Employee,
+Delete Employee
+

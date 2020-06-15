@@ -12,13 +12,23 @@ module.exports = function() {
     entry: {
       polyfills: ["@babel/polyfill"],
       app: path.join(__dirname, "src"),
-      vendor: ["react", "react-dom"]
+      vendor: [
+          'react',
+          'react-dom',
+          'redux',
+          'react-redux',
+          'redux-devtools-extension',
+          'react-router-dom',
+          'rxjs',
+          'redux-observable',
+          'axios'
+      ]
     },
 
     output: {
       filename: "js/[name].[contenthash].js",
       path: path.join(__dirname, "../dist/client"),
-      publicPath: "/groceries/"
+      publicPath: "/gru/"
     },
 
     optimization: {

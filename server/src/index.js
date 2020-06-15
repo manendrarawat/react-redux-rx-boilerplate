@@ -15,9 +15,6 @@ expressApp.use(routes({
 
 const httpServer = http.createServer(expressApp);
 
-console.log('__dirname index.js ', __dirname);
-
-
 httpServer.listen(config.PORT, () => {
     console.log('application is running in port ', config.PORT);
 })
