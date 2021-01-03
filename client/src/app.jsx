@@ -11,7 +11,7 @@ const Login = asyncComponent({
 
 
 //const Login = () => <div>This is login page</div>;
-const SignUp = () => <div>This is signup page</div>;
+const SignUp = () => <div className='test-class'>This is signup page</div>;
 const Dashboard = () => <div>This is Dashboard page having private route</div>;
 
 

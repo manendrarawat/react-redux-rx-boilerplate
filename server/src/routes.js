@@ -12,6 +12,7 @@ export default (args) => {
     });
 
     expressRouter.use('/gru/js', express.static(path.join(__dirname, 'client/js')));
+    expressRouter.use('/gru/css', express.static(path.join(__dirname, 'client/css')));
     expressRouter.use('/gru/img', express.static(path.join(__dirname, 'client/img')));
 
     console.log('__dirname ', __dirname);

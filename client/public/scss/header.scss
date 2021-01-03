@@ -1,0 +1,78 @@
+.header_utility_bar{
+    border-top: 6px solid #00539f;
+    border-bottom: 1px solid #e5e5e5;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    }
+    .header_primary_navigation{
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+        .left_navigation_wrapper, .cec-menu:first-child{
+            height: 74px;
+            display: flex;
+            align-items: center;
+
+        }
+    }
+    .ui-component__header__tesco-slogan{
+        margin: 0 0 0 0px;
+        a{
+            text-decoration: none;
+            font-size: 32px;
+        }
+        a:hover{
+            color: #00539f;
+        }
+    }
+    // }
+    // .header_primary_navigation li{
+    //     display: flex;
+    //     justify-content: space-evenly;
+    // }
+    // .header_primary_navigation li a{
+    //     position: relative;
+    //     top: 33%;
+    //     text-decoration: none;
+    // }
+    // .header_primary_navigation li a span{
+    //     font-size: 16px;
+    // }
+
+
+.navigation-menu{
+    margin-right: 97px;
+    .cec-icon{
+        width: 19px;
+        height: 19px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    .menu-list{
+        margin-right: 20px;
+        display: flex;
+        line-height: 18px;
+    }
+    a{
+        text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+}
+.not-logged-in{
+    .ui-component__header__tesco-logo-wrapper{
+        margin: 0 auto;
+    }
+}
+.logged-in{
+    .ui-component__header__tesco-logo-wrapper{
+        margin-left:25px;
+
+    }
+}

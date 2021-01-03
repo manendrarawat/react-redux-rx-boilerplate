@@ -3,6 +3,7 @@
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require("path");
 
 module.exports = function() {
@@ -58,8 +59,15 @@ module.exports = function() {
         },
 
         {
-          test: /\.css$/i,
-          use: ["style-loader", "css-loader"]
+          test: /\.(css|scss)$/,
+          exclude: /node_modules/,
+          include: [
+            path.resolve(__dirname, 'public/scss')
+          ],
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: ['css-loader?url=true', 'sass-loader?sourceMap=true']
+          })
         },
 
         {
@@ -90,6 +98,8 @@ module.exports = function() {
       }),
 
       new webpack.EnvironmentPlugin({ ENV: "local" }),
+
+      new ExtractTextPlugin({ filename: 'css/main.[hash].css', allChunks: true }),
 
       new HtmlWebpackPlugin({
         template: path.join(__dirname, "src/templates/index.html"),
